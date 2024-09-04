@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --color-primary:#34C94B; /* Example primary color */
+}
+
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    height: 27px;
+    width: 138px;
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    background-color: black;
+    color: var(--color-primary);
+    padding: 10px, 16px, 10px, 16px;
+    height: 47px;
+    width: 170px;
+    border-radius: 12px;
+}

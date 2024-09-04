@@ -1,0 +1,15 @@
+:root {
+    --color-primary: #34C94B;
+    /* Example primary color */
+}
+
+.navbar {
+    background-color: var(--color-primary);
+    height: 74px;
+    /* width: 100vw; */
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+}

@@ -6,12 +6,16 @@ import reportWebVitals from './reportWebVitals';
 
 import Navbar from './component/Navbar/Navbar';
 import Hero from "./component/Hero/Hero"
+import SongCard from './component/SongCard/SongCard';
+import Section from './component/Section/Section';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <Navbar searchData = "" />
-      <Hero />    
+      <Hero />
+      {/* <SongCard /> */}
+      <Section />
   </React.StrictMode>
 );
 

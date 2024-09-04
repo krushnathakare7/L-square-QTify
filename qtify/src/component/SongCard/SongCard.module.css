@@ -1,0 +1,25 @@
+.card {
+    background: black;
+    max-height: 232px;
+    width: 159px;
+    border-radius: 10px;
+}
+
+.chip {
+    color: white;
+    background-color: black;
+  
+
+}
+
+.cardContent {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.div{
+    height: 205px;
+    border-radius: 10px;
+    background-color: white;
+}

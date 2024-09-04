@@ -1,0 +1,42 @@
+
+.main{
+    width: 100%;
+    /* margin-top: 10px; */
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+}
+
+.btn {
+    color: var(--color-primary);
+    background-color: var(--color-black);
+  border: 0px;
+ font-weight: 600;
+ padding-right: 31px;
+ cursor: pointer;
+}
+
+.spn{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 14px;
+    padding-left: 31PX;
+}
+
+.songContainer{
+    height: 232px;
+    width: 100%;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

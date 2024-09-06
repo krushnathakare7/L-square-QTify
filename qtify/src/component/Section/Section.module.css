@@ -38,7 +38,6 @@
     background-color: var(--color-black);
     display: flex;
     justify-content: flex-start;
-    padding-top: 12px;
     padding-bottom: 12px;
     flex-wrap: wrap;
     column-gap: 50px;

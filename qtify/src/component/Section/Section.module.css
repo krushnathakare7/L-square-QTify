@@ -42,5 +42,5 @@
     padding-bottom: 12px;
     flex-wrap: wrap;
     column-gap: 50px;
-    padding: 0px 5px 0px 5px;
+    column-gap: 45px;
 }

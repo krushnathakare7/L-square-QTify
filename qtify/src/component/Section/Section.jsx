@@ -26,25 +26,44 @@ export default function Section() {
     const chunkedData = chunkArray(data, 7);
 
     return (
+        // <div className={Styles.main}>
+        //     <div className={Styles.second}>
+        //         <span className={Styles.spn}>Top Album</span>
+        //         <button className={Styles.btn}>Collapse</button>
+        //     </div>
+
+        //     {chunkedData.map((chunk, index) => (
+        //         <div className={Styles.songContainer} key={index}>
+        //             {chunk.map((ele) => (
+        //                 <SongCard
+        //                     image={ele.image}
+        //                     title={ele.title}
+        //                     follow={ele.follows}
+        //                     key={ele.id}
+        //                 />
+        //             ))}
+        //         </div>
+        //     ))}
+        // </div>
+
         <div className={Styles.main}>
             <div className={Styles.second}>
                 <span className={Styles.spn}>Top Album</span>
                 <button className={Styles.btn}>Collapse</button>
             </div>
 
-            {chunkedData.map((chunk, index) => (
-                <div className={Styles.songContainer} key={index}>
-                    {chunk.map((ele) => (
-                        <SongCard
-                            image={ele.image}
-                            title={ele.title}
-                            follow={ele.follows}
-                            key={ele.id}
-                        />
-                    ))}
-                </div>
-            ))}
+
+            <div className={Styles.songContainer}>
+                   {
+                    data.map((ele)=> <SongCard image={ele.image} title={ele.title} follow={ele.follows} key={ele.id}/>)
+                   }
+            </div>
+
         </div>
+
+
+           
+
     );
 }
 

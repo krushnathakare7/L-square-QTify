@@ -1,5 +1,5 @@
 .card {
-    background: black;
+    background: var(--color-black);
     max-height: 232px;
     width: 159px;
     border-radius: 10px;
@@ -7,13 +7,13 @@
 
 .chip {
     color: white;
-    background-color: black;
+    background-color: var(--color-black);
   
 
 }
 
 .cardContent {
-    background-color: black;
+    background-color: var(--color-black);
     color: white;
     text-align: left;
 }

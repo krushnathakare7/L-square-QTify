@@ -32,11 +32,11 @@
 }
 
 .songContainer{
-    height: 232px;
     width: 100%;
     background-color: var(--color-black);
     display: flex;
     justify-content: space-around;
     padding-top: 12px;
     padding-bottom: 12px;
+    flex-wrap: wrap;
 }

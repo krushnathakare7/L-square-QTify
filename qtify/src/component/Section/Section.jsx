@@ -5,7 +5,7 @@ import Carousel from "../Carousel/Carousel";
 
 export default function Section({title,data}) {
  
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
 
     return (

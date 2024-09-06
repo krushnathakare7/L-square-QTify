@@ -2,9 +2,10 @@
 .main{
     width: 100%;
     /* margin-top: 10px; */
-    height: 280px;
+    /* height: 280px; */
     display: flex;
     flex-direction: column;
+    background-color: var(--color-black);
 }
 
 .second {
@@ -29,14 +30,17 @@
     text-align: center;
     padding-top: 14px;
     padding-left: 31PX;
+    font-weight: 600;
 }
 
 .songContainer{
-    width: 100%;
+    
     background-color: var(--color-black);
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-top: 12px;
     padding-bottom: 12px;
     flex-wrap: wrap;
+    column-gap: 50px;
+    padding: 0px 5px 0px 5px;
 }

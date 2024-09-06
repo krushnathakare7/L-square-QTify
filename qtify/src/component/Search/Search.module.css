@@ -1,5 +1,5 @@
-:root {
-    --color-black: #121212
+:root{
+    --color-black :#121212
 }
 
 .search {
@@ -10,16 +10,16 @@
     border-bottom-right-radius: 0px;
     border: 1px solid var(--color-black);
     width: 568px;
-
-}
-
-.wrapper {
+  
+  }
+  
+  .wrapper {
     display: flex;
     align-items: stretch;
     height: 48px;
-}
-
-.searchButton {
+  }
+  
+  .searchButton {
     border-radius: 0px 8px 8px 0px;
     padding: 14px 20px;
     height: 100%;
@@ -27,18 +27,19 @@
     border-left: none;
     cursor: pointer;
     height: 95%;
-}
-
-.listElement {
+  }
+  
+  .listElement {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-}
-
-.albumTitle {
+  }
+  
+  .albumTitle {
     font-size: 16px;
-}
-
-.albumArtists {
+  }
+  
+  .albumArtists {
     font-size: 12px;
-}
+  }
+  

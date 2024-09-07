@@ -8,7 +8,7 @@ import Chip from '@mui/material/Chip';
 
 import exampleImg from "../../assets/exampleCard.png";
 
-export default function SongCard({image,title,follow}) {
+export default function SongCard({image,title,follow, likes}) {
   return (
    
     <Card sx={{background: "black", borderRadius:"0px", padding:"0px"}} className={styles.card} >
@@ -20,7 +20,7 @@ export default function SongCard({image,title,follow}) {
    image={image}
    alt="Paella dish"
  />
-  <Chip sx={{color:"white", background:"black", height:"23px", width:"71px", margin:"5px 0px 0px 5px", fontSize:"6px"}} className={styles.chip} label={follow + " Follows"} />
+  <Chip sx={{color:"white", background:"black", height:"23px", width:"71px", margin:"5px 0px 0px 5px", fontSize:"6px"}} className={styles.chip} label={ likes || follow + " Follows"} />
      </div>
        <CardContent sx={{padding: "6px 0px 0px 0px !important", fontSize:"14px"}} className= {styles.cardContent}>{title}</CardContent>
     </Card>

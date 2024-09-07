@@ -13,6 +13,7 @@ function App() {
 
   const [topAlbum, setTopAlbum] = useState([]);
   const [newAlbum, setNewAlbum] = useState([]);
+  const [allSongs, setAllSongs] = useState([]);
 
 
   useEffect(()=>{
@@ -23,6 +24,8 @@ function App() {
         setTopAlbum(topAlbumData.data);
         const newAlbumData = await axios.get(`https://qtify-backend-labs.crio.do/albums/new`);
         setNewAlbum(newAlbumData.data);
+        const allSongsData = await axios.get(`https://qtify-backend-labs.crio.do/songs`);
+        setAllSongs(allSongsData.data);
       }catch(e){
         console.error(e)
       }
@@ -30,7 +33,7 @@ function App() {
   };
   onLoad();
 
-  },[topAlbum,newAlbum])
+  },[])
 
 
   return (
@@ -40,6 +43,7 @@ function App() {
       <div style={{padding:"20px", background:"var(--color-black)" }}>
           <Section title="Top Albums" data={topAlbum} />
           <Section title="New Albums" data={newAlbum} />
+          <Section title="Songs" data={allSongs} showTabs border/>
       </div> 
     </div>
   );

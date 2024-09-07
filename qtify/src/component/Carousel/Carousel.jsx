@@ -17,8 +17,6 @@ export default function Carousel({data}) {
                 modules={[Navigation, A11y]}
                 spaceBetween={50}
                 slidesPerView={7}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 navigation={{ // Ensure the navigation module is enabled
                     nextEl: `.${styles.customNextButton}`,
                     prevEl: `.${styles.customPrevButton}`,

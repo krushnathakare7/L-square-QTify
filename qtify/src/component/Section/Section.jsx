@@ -56,7 +56,7 @@ export default function Section({title,data, showTabs, border}) {
                         {tabLabel.map((ele)=> {
                             return (<Tab sx={{color:"inherit", textTransform:"none"}} label={ele.label} value={ele.label} key={ele.key}/>)})}                        
                 </Tabs>
-                
+                           
             </div>: null}
 
              {toggle ? 
